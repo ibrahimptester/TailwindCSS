@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Approach</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-5">
+   <!--  Responsive Flexbox Layout -->
+     <div class="flex flex-col sm:flex-row lg:flex-row-reverse mb-8">
+      <div class="p-4 bg-green-200">Item 1</div>
+      <div class="p-4 bg-green-300">Item 2</div>
+      <div class="p-4 bg-green-400">Item 3</div>
+     </div>
+
+     <!--  Responsive Grid Layout -->
+       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="p-4 bg-orange-200">1</div>
+        <div class="p-4 bg-orange-300">2</div>
+        <div class="p-4 bg-orange-400">3</div>
+        <div class="p-4 bg-orange-500">4</div>
+       </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class Variants in Tailwind</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-5">
+    <!--  Applying Hover, Focus, and Active States -->
+      <div>
+        <button class="bg-blue-500 hover:bg-sky-700 hover:text-orange-500 text-white px-6 py-2 rounded">Hover Button</button>
+        <button class="bg-red-500 hover:bg-sky-700 hover:text-orange-500 text-white px-6 py-2 rounded focus:ring-4 focus:ring-orange-500">Focus Button</button>
+        <button class="bg-blue-500 hover:bg-sky-700 hover:text-orange-500 text-white px-6 py-2 rounded active:bg-black">Hover Button</button>
+      </div>
+
+      <!-- Group Hover -->
+       <div class="mt-8 group">
+        <div class="p-4 bg-gray-200 group-hover:bg-green-300">Parent (hover me)</div>
+        <button class="bg-red-500 text-white px-4 py-2 rounded group-hover:bg-indigo-600">Child (changes on parent hover)</button>
+       </div>
+</body>
+</html>

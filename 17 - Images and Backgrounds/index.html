@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Images and Backgrounds</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-5 space-y-5">
+   <!-- applying background image -->
+    <div class="h-64 flex items-center justify-center w-full bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover">
+      <p class="text-center text-xl ">Beautiful Background</p>
+    </div>
+
+    <!-- styling Image -->
+     <div class="flex gap-4">
+      <!-- object cover -->
+       <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-64 h-40 object-cover rounded-lg shadow">
+
+       <!-- object-contain -->
+       <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-64 h-40 object-contain rounded-lg shadow">
+     </div>
+
+     <!-- Opacity and Background-Blur -->
+      <div class="relative h-64 w-full bg-[url('https://images.unsplash.com/photo-1527876945846-fd46461135ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+        
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center backdrop-blur-sm">
+          <p class="text-2xl text-white font-bold">Frosted Glass Effect</p>
+        </div>
+
+      </div>
+     
+</body>
+</html>

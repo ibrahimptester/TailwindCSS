@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Transition</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            
+            --animate-opacity: opacity 1.5s ease-in infinite;
+
+            @keyframes opacity {
+
+                0%{
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 0.5;
+                }
+                100% {
+                opacity: 1;
+                }
+
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center my-10 font-bold">Animation and Transition</h1>
+
+    <div
+        class="m-5 h-20 bg-violet-400 text-white text-2xl text-center leading-[80px] transition-all duration-300 ease-in hover:bg-red-300">
+        Transition div</div>
+
+    <!-- Animation -->
+
+    <div class="border-2 border-blue-400 border-t-transparent rounded-full h-10 w-10 ml-10 animate-spin">
+        <!-- loading animation -->
+    </div>
+
+    <div class="animate-bounce my-10 ml-20 text-3xl">⬆️</div>
+
+    <!-- Custom Animation -->
+
+    <div class="bg-yellow-300 h-30 w-50 mx-auto flex items-center justify-center animate-opacity">DIV For Custom Animation</div>
+
+</body>
+
+</html>
